@@ -6,7 +6,7 @@ const pool = new Pool({
   password: "password",
   host: "localhost",
   port: 5432,
-  database: "stay_focus_login",
+  database: "stay_focus",
 });
 
 export default pool;

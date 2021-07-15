@@ -37,7 +37,7 @@ export default function Register({ setAuth }) {
 
     try {
       const body = { email, password, name };
-      const response = await fetch("http://localhost:5000/auth/register", {
+      const response = await fetch("http://karnan.games:5000/auth/register", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify(body),
@@ -93,7 +93,6 @@ export default function Register({ setAuth }) {
               <Grid item xs={10} sm={10} md={10} lg={10}></Grid>
               <TextField
                 required
-                id="outlined-required"
                 label="Required"
                 variant="outlined"
                 type="name"

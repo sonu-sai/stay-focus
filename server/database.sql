@@ -5,9 +5,9 @@ CREATE TABLE users (
     uuid_generate_v4(),
     user_name VARCHAR(255) NOT NULL,
     user_email VARCHAR(255) NOT NULL,
-    user_password VARCHAR(255) NOT NULL,
+    user_password VARCHAR(255) NOT NULL
 
 );
-
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 -- inser values in to db
 INSERT INTO users (user_name, user_email, user_password)  VALUES ('sonu', 'sonu@gmail.com', 'password');

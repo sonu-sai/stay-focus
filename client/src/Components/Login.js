@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Login({ setAuth }) {
   const classes = useStyles();
+
   const [inputs, setInputs] = useState({
     email: "",
     password: "",
@@ -35,7 +36,7 @@ export default function Login({ setAuth }) {
     e.preventDefault();
     const body = { email, password };
     try {
-      const response = await fetch("http://localhost:5000/auth/login", {
+      const response = await fetch("http://karnan.games:5000/auth/login", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify(body),
